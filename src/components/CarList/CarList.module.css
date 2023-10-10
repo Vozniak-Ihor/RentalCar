@@ -1,0 +1,146 @@
+.catalogConteiner {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1184px;
+   
+    align-items: flex-start;
+    gap: 29px;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+   }
+   .cards {
+    width: 274px;
+    height: 426px;
+   }
+   .carImg {
+    width: 274px;
+    height: 268px;
+    object-fit: cover;
+    border-radius: 14px;
+    background: linear-gradient(
+      180deg,
+      rgba(18, 20, 23, 0.5) 2.5%,
+      rgba(18, 20, 23, 0) 41.07%
+     ),
+     #f3f3f2;
+    margin-bottom: 14px;
+   }
+   
+   .carTitle {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+   }
+   
+   .carTitleMake {
+    margin: 0;
+    margin-bottom: 8px;
+    margin-right: auto;
+    color: #121417;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+   }
+   
+   .carTitleModel {
+    color: #3470ff;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+   }
+   
+   .cardInfo {
+    margin: 0;
+    width: 270px;
+    max-height: 40px;
+    color: rgba(18, 20, 23, 0.5);
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    overflow: hidden;
+    margin-bottom: 28px;
+   }
+   
+   .cardBtn {
+    display: flex;
+    width: 274px;
+    height: 44px;
+    padding: 12px 99px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 12px;
+    border: none;
+    background: #3470ff;
+    color: white;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    transition: background 0.5s ease;
+   }
+   
+   .cardBtn:hover {
+    background: #0b44cd;
+    cursor: pointer;
+   }
+   
+   .carImgCheckbox {
+    position: relative;
+   }
+   
+   .checkbox {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    height: 0;
+   }
+   
+   input[type='checkbox']::before {
+    content: '';
+    position: absolute;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+   
+    background-image: url(../../images/normal.svg);
+   }
+   
+   input[type='checkbox']:checked::after {
+    content: '';
+    position: absolute;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    background-image: url(../../images/active.svg);
+    visibility: visible;
+   }
+   
+   .loadMoreButton {
+    color: #3470ff;
+    background: inherit;
+    border: none;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    display: flex;
+    margin: 50px auto 50px;
+    text-decoration-line: underline;
+    transition: color 0.5s ease;
+   }
+   
+   .loadMoreButton:hover,
+   .loadMoreButton:focus {
+    color: #0b44cd;
+    cursor: pointer;
+   }
+   
