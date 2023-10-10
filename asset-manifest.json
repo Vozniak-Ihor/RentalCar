@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/RentalCar/static/css/main.8e1637fe.css",
+    "main.js": "/RentalCar/static/js/main.a09a96b7.js",
+    "static/css/936.09dd1910.chunk.css": "/RentalCar/static/css/936.09dd1910.chunk.css",
+    "static/js/936.67d925fd.chunk.js": "/RentalCar/static/js/936.67d925fd.chunk.js",
+    "static/css/921.cf77f2c3.chunk.css": "/RentalCar/static/css/921.cf77f2c3.chunk.css",
+    "static/js/921.45a20d52.chunk.js": "/RentalCar/static/js/921.45a20d52.chunk.js",
+    "static/css/820.94829cab.chunk.css": "/RentalCar/static/css/820.94829cab.chunk.css",
+    "static/js/820.1984935f.chunk.js": "/RentalCar/static/js/820.1984935f.chunk.js",
+    "static/css/603.dc754830.chunk.css": "/RentalCar/static/css/603.dc754830.chunk.css",
+    "static/js/603.de2510c8.chunk.js": "/RentalCar/static/js/603.de2510c8.chunk.js",
+    "static/media/normal.svg": "/RentalCar/static/media/normal.282d936f414f4c6884ab.svg",
+    "static/media/active.svg": "/RentalCar/static/media/active.97847e9195943f61800c.svg",
+    "index.html": "/RentalCar/index.html",
+    "main.8e1637fe.css.map": "/RentalCar/static/css/main.8e1637fe.css.map",
+    "main.a09a96b7.js.map": "/RentalCar/static/js/main.a09a96b7.js.map",
+    "936.09dd1910.chunk.css.map": "/RentalCar/static/css/936.09dd1910.chunk.css.map",
+    "936.67d925fd.chunk.js.map": "/RentalCar/static/js/936.67d925fd.chunk.js.map",
+    "921.cf77f2c3.chunk.css.map": "/RentalCar/static/css/921.cf77f2c3.chunk.css.map",
+    "921.45a20d52.chunk.js.map": "/RentalCar/static/js/921.45a20d52.chunk.js.map",
+    "820.94829cab.chunk.css.map": "/RentalCar/static/css/820.94829cab.chunk.css.map",
+    "820.1984935f.chunk.js.map": "/RentalCar/static/js/820.1984935f.chunk.js.map",
+    "603.dc754830.chunk.css.map": "/RentalCar/static/css/603.dc754830.chunk.css.map",
+    "603.de2510c8.chunk.js.map": "/RentalCar/static/js/603.de2510c8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8e1637fe.css",
+    "static/js/main.a09a96b7.js"
+  ]
+}
