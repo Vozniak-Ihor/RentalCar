@@ -15,7 +15,7 @@ const AppBar = () => {
           </NavLink>
           {isLoggedIn && (
             <NavLink to="/catalog" className={css.AppBarLink}>
-              Contants
+              Catalog
             </NavLink>
           )}
           {isLoggedIn && (

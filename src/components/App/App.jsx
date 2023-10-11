@@ -1,11 +1,11 @@
-import React, { lazy } from 'react';
+import React, { lazy, useEffect } from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { useEffect } from 'react';
 import { refreshThunk } from 'redux/auth/operations';
 import AppBar from '../AppBar/AppBar';
 import PrivateRoute from '../PrivateRoute/PrivateRoute';
 import RestrictedRoute from '../RestrictedRoute/RestrictedRoute';
+
 const Home = lazy(() => import('../../pages/Home/Home'));
 const LoginSingUp = lazy(() => import('../../pages/LoginSingUp/LoginSingUp'));
 const Catalog = lazy(() => import('../../pages/Catalog/Catalog'));
@@ -17,6 +17,7 @@ function App() {
  useEffect(() => {
   dispatch(refreshThunk());
  }, [dispatch]);
+
  return (
   <Routes>
    <Route path="/" element={<AppBar />}>
