@@ -1,10 +1,16 @@
 import './Modal.css';
-
+import crossImg from '../../images/x.svg';
 const Modal = ({ active, setActive, infoCar }) => {
  if (!infoCar || !infoCar.img) {
   return null;
  }
+ const handleOnClose = e => {
+  if (e.code === 'Escape') {
+   setActive(false);
+  }
+ };
 
+ window.addEventListener('keydown', handleOnClose);
  return (
   <div
    className={active ? 'modal active' : 'modal'}
@@ -14,6 +20,9 @@ const Modal = ({ active, setActive, infoCar }) => {
     className={active ? 'modalContent active' : 'modal'}
     onClick={e => e.stopPropagation()}
    >
+    <button className='CloseButton' onClick={() => setActive(false)}>
+     <img src={crossImg} alt="cancel" />
+    </button>
     <div className="modalImgCheckbox">
      <img
       className="modalImg"
@@ -37,14 +46,20 @@ const Modal = ({ active, setActive, infoCar }) => {
     <p className="modalInfoCar">
      {infoCar.accessories.join(' | ')} | {infoCar.functionalities.join(' | ')}
     </p>
-    <h4>Rental Conditions: </h4>
-    {infoCar.rentalConditions.split('\n').map((condition, index) => (
-     <p key={index}>{condition}</p>
-    ))}
-    <p>{`Mileage:${infoCar.mileage}`}</p>
-    <p>{`Price:${infoCar.rentalPrice}`}</p>
+    <h4 className="modalTitle">Rental Conditions: </h4>
+    <div className="modalCondition">
+     {infoCar.rentalConditions.split('\n').map((condition, index) => (
+      <p className="modalConditions" key={index}>
+       {condition}
+      </p>
+     ))}
+     <p className="modalConditions">{`Mileage: ${infoCar.mileage}`}</p>
+     <p className="modalConditions">{`Price:${infoCar.rentalPrice}`}</p>
+    </div>
 
-    <button className="modalBtn">Rental car</button>
+    <a className="modalBtn" href="tel:+380730000000">
+     Rental car
+    </a>
    </div>
   </div>
  );
