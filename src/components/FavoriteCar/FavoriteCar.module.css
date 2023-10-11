@@ -38,7 +38,7 @@
     margin-bottom: 8px;
     margin-right: auto;
     color: #121417;
-    font-family: Manrope;
+    font-family: 'Manrope', sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -47,7 +47,7 @@
    
    .carTitleModel {
     color: #3470ff;
-    font-family: Manrope;
+    font-family: 'Manrope', sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -59,7 +59,7 @@
     width: 270px;
     max-height: 40px;
     color: rgba(18, 20, 23, 0.5);
-    font-family: Manrope;
+    font-family: 'Manrope', sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -80,7 +80,7 @@
     border: none;
     background: #3470ff;
     color: white;
-    font-family: Manrope;
+    font-family: 'Manrope', sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;

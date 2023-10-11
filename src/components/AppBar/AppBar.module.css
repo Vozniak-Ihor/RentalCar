@@ -1,4 +1,4 @@
-/* Стилі для навігаційного меню */
+
 .header {
   background-color: #ffffff;
   padding: 10px;
@@ -13,11 +13,12 @@
 
 .AppBarLink {
   position: relative;
-  color: #000000; /* Колір тексту */
+  color: #000000; 
   text-decoration: none;
   font-size: 15px;
   font-weight: 500;
-  /* margin-right: 20px; */
+  font-family: 'Manrope', sans-serif;
+
   padding: 5px 10px;
   transition: color 0.5s ease;
 }
@@ -26,15 +27,15 @@
   content: '';
   position: absolute;
   left: 0;
-  bottom: -4px; /* Відступ від тексту до підкреслення */
+  bottom: -4px;
   width: 100%;
-  height: 2px; /* Товщина підкреслення */
-  background-color:#333; /* Фіолетовий колір підкреслення */
+  height: 2px; 
+  background-color:#333; 
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
 .AppBarLink:hover::after,
 .AppBarLink.active::after {
-  opacity: 1; /* При наведенні або активній сторінці - підкреслення видиме */
+  opacity: 1; 
 }

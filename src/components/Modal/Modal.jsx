@@ -2,8 +2,7 @@ import './Modal.css';
 
 const Modal = ({ active, setActive, infoCar }) => {
  if (!infoCar || !infoCar.img) {
-  // Handle the case when infoCar or its img property is not defined
-  return null; // or return some default content or an error message
+  return null;
  }
 
  return (
@@ -15,27 +14,27 @@ const Modal = ({ active, setActive, infoCar }) => {
     className={active ? 'modalContent active' : 'modal'}
     onClick={e => e.stopPropagation()}
    >
-    <div className="carImgCheckbox">
+    <div className="modalImgCheckbox">
      <img
-      className="carImg"
+      className="modalImg"
       src={infoCar.img}
       alt={`${infoCar.make} ${infoCar.model}, ${infoCar.year}`}
      />
     </div>
-    <div className="carTitle">
-     <h3 className="carTitleMake">
-      {infoCar.make} <span className="carTitleModel">{infoCar.model}</span>,{' '}
-      {infoCar.year}
-     </h3>
-    </div>
-    <p className="cardinfoCar">
+
+    <h3 className="modalTitleMake">
+     {infoCar.make} <span className="modalTitleModel">{infoCar.model}</span>,{' '}
+     {infoCar.year}
+    </h3>
+
+    <p className="modalInfoCar">
      {infoCar.address} | {infoCar.id} | {`Year: ${infoCar.year}`} |
      {`Type: ${infoCar.type}`}| {`Fuel Consumption:${infoCar.fuelConsumption}`}{' '}
      | {`Engine Size: ${infoCar.engineSize}`}
     </p>
-    <p>{infoCar.description}</p>
-    <p>Accessories and functionalities:</p>
-    <p className="cardinfoCar">
+    <p className="modalDescription">{infoCar.description}</p>
+    <p className="modalAccessories">Accessories and functionalities:</p>
+    <p className="modalInfoCar">
      {infoCar.accessories.join(' | ')} | {infoCar.functionalities.join(' | ')}
     </p>
     <h4>Rental Conditions: </h4>
@@ -45,7 +44,7 @@ const Modal = ({ active, setActive, infoCar }) => {
     <p>{`Mileage:${infoCar.mileage}`}</p>
     <p>{`Price:${infoCar.rentalPrice}`}</p>
 
-    <button className="cardBtn">Rental car</button>
+    <button className="modalBtn">Rental car</button>
    </div>
   </div>
  );

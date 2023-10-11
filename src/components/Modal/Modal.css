@@ -1,6 +1,6 @@
 .modal {
  position: fixed;
- bottom:  0;
+ bottom: 0;
  right: 0;
  display: flex;
  justify-content: center;
@@ -30,4 +30,70 @@
 
 .modalContent.active {
  transform: scale(1);
+}
+
+.modalImg {
+ width: 461px;
+ height: 248px;
+ object-fit: cover;
+ border-radius: 14px;
+ background: linear-gradient(
+   180deg,
+   rgba(18, 20, 23, 0.5) 2.5%,
+   rgba(18, 20, 23, 0) 41.07%
+  ),
+  #f3f3f2;
+ margin-bottom: 14px;
+}
+
+.modalTitleMake {
+ margin: 0;
+ margin-bottom: 8px;
+ color: #121417;
+ font-family: 'Manrope', sans-serif;
+ font-size: 18px;
+ font-style: normal;
+ font-weight: 500;
+ line-height: 24px;
+}
+
+.modalTitleModel {
+ color: #3470ff;
+ font-family: 'Manrope', sans-serif;
+ font-size: 18px;
+ font-style: normal;
+ font-weight: 500;
+ line-height: 24px;
+}
+
+.modalInfoCar {
+ margin: 0;
+ margin-bottom: 14px;
+ color: rgba(18, 20, 23, 0.5);
+ font-family: 'Manrope', sans-serif;
+ font-size: 12px;
+ font-style: normal;
+ font-weight: 400;
+ line-height: 18px;
+}
+
+.modalDescription {
+ margin: 0;
+ margin-bottom: 24px;
+ color: #121417;
+ font-family: 'Manrope', sans-serif;
+ font-size: 14px;
+ font-style: normal;
+ font-weight: 400;
+ line-height: 20px;
+}
+.modalAccessories {
+ margin: 0;
+ margin-bottom: 8px;
+ color: #121417;
+ font-family: 'Manrope', sans-serif;
+ font-size: 14px;
+ font-style: normal;
+ font-weight: 500;
+ line-height: 20px;
 }
