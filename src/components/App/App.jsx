@@ -22,21 +22,21 @@ function App() {
    <Route path="/" element={<AppBar />}>
     <Route index element={<Home />} />
     <Route
-     path="/registration"
+     path="registration"
      element={
-      <RestrictedRoute redirectTo="/catalog" component={<LoginSingUp />} />
+      <RestrictedRoute redirectTo="catalog" component={<LoginSingUp />} />
      }
     />
     <Route
-     path="/catalog"
+     path="catalog"
      element={
-      <PrivateRoute redirectTo="/registration" component={<Catalog />} />
+      <PrivateRoute redirectTo="registration" component={<Catalog />} />
      }
     />
     <Route
-     path="/favorites"
+     path="favorites"
      element={
-      <PrivateRoute redirectTo="/registration" component={<Favorites />} />
+      <PrivateRoute redirectTo="registration" component={<Favorites />} />
      }
     />
     <Route path="*" element={<Navigate to="/" replace />} />
